@@ -1,0 +1,8 @@
+package com.ecom.service.impl;
+
+import com.ecom.service.CategoryService;
+
+@Service
+public class CategoryServiceImpl implements CategoryService{
+
+}

@@ -1,0 +1,8 @@
+package com.ecom.model;
+
+public class product {
+  private int id;
+  
+  @Column(length = 500)
+  private String title;
+}

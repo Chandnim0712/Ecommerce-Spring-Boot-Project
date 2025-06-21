@@ -1,0 +1,14 @@
+package com.DAO;
+
+public class UserDAO {
+	
+	private Connection con;
+
+	public UserDAO(Connection con) {
+		super();
+		
+	}
+	
+	
+
+}

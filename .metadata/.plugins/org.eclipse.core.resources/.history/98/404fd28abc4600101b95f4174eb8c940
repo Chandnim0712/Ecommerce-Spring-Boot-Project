@@ -1,0 +1,8 @@
+package com.ecom.service;
+
+public interface productService {
+
+	public Product saveProduct(Product product) {
+		
+	}
+}

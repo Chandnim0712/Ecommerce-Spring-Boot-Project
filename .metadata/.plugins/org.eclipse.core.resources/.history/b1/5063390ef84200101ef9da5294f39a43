@@ -1,0 +1,8 @@
+package com.ecom.controller;
+
+public class HomeController {
+
+	public String index() {
+		return "index";
+	}
+}

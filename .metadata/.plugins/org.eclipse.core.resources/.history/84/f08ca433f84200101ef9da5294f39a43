@@ -1,0 +1,11 @@
+package com.ecom.controller;
+
+import org.springframework.stereotype.Controller;
+
+public class HomeController {
+
+	@Controller
+	public String index() {
+		return "index";
+	}
+}

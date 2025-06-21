@@ -1,0 +1,6 @@
+package com.ecom.service;
+
+@Service
+public interface CommonService {
+
+}

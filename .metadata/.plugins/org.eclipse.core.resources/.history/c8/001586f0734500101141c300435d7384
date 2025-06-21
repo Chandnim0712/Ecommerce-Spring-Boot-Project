@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<body>
+<section>
+    <div class="container card-sh" style="margin-top: 70px; margin-bottom: 100px">
+        <div class="col-md-12 p-5">
+            <div class="row">
+
+                <!-- Status messages (placeholder for now, can add dynamically later) -->
+                <!--
+                <p class="text-success alert alert-success text-center" role="alert">Success message</p>
+                <p class="text-danger alert alert-danger text-center" role="alert">Error message</p>
+                -->
+
+                <!-- Product Image -->
+                <div class="col-md-6 text-end">
+                    <img alt="Laptop" src="/img/product_img/laptop.jpg" width="300px" height="250px">
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-md-6">
+                    <p class="fs-3">Laptop</p>
+                    <p>
+                        <span class="fw-bold">Description :</span><br>
+                        Hp Laptop, 256Gb SSD
+                    </p>
+                    <p>
+                        <span class="fw-bold">Product Details:</span><br>
+                        Status:
+                        <span class="badge bg-success">Available</span>
+                        <!-- Example alternative: -->
+                        <!-- <span class="badge bg-warning">Out of Stock</span> -->
+                        <br>
+                        Category: Laptop<br>
+                        Policy: 7 Days Replacement & Return
+                    </p>
+                    <p class="fs-5 fw-bold">
+                        Price: &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-rupee-sign"></i> 70000
+                        <span class="fs-6 text-decoration-line-through text-secondary">80000</span>
+                        <span class="fs-6 text-success">50% off</span>
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-4 text-success text-center p-2">
+                            <i class="fas fa-money-bill-wave fa-2x"></i>
+                            <p>Cash On Delivery</p>
+                        </div>
+                        <div class="col-md-4 text-danger text-center p-2">
+                            <i class="fas fa-undo-alt fa-2x"></i>
+                            <p>Return Available</p>
+                        </div>
+                        <div class="col-md-4 text-primary text-center p-2">
+                            <i class="fas fa-truck-moving fa-2x"></i>
+                            <p>Free Shipping</p>
+                        </div>
+                    </div>
+
+                    <a href="login.jsp" class="btn btn-danger col-md-12">Add to Cart</a>
+                    <!-- Or show out of stock if needed -->
+                    <!-- <a href="#" class="btn text-white btn-warning col-md-12">Out of Stock</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.apache.catalina.User;
+
+public class UserDAO {
+	
+	private Connection conn;
+
+	public UserDAO(Connection conn) {
+		super();
+		this.conn = conn;
+		
+	}
+	
+	public boolean userRegister(UserDAO dao) {
+		boolean f=false;
+		try {
+			String qu = "insert into user(name, email, password) values(?,?,?)";
+			PreparedStatement ps = conn.prepareStatement(qu);
+			ps.setString(1,dao.getName());
+			ps.setString(2,dao.getEmail());
+			ps.setString(3, dao.getPassword());
+			
+			ps.executeUpdate();
+			f=true;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return f;
+	}
+
+}

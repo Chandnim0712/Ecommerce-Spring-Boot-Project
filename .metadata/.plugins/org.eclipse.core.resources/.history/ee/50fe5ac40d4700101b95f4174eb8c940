@@ -1,0 +1,10 @@
+package com.DB;
+
+public class DBConnect {
+
+	private static Connection conn = null;
+	private static Connection getConnection () {
+		Class.forName("org.postgresql.Driver");
+	}
+	
+}

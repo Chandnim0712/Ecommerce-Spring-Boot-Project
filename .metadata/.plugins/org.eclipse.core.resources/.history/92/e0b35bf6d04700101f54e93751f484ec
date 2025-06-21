@@ -1,0 +1,27 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class UserDAO {
+	
+	private Connection conn;
+
+	public UserDAO(Connection conn) {
+		super();
+		this.conn = conn;
+		
+	}
+	
+	public boolean userRegister(User us) {
+		boolean f=false;
+		try {
+			String qu = "insert into user(name, email, password) values(?,?,?)";
+			PreparedStatement ps = conn.prepareStatement(qu);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return f;
+	}
+
+}
